@@ -1,0 +1,16 @@
+<template>   
+    <!--Esse LWC adiciona varição de porcentagem relacionado a um campo da oportnidade -->     
+    <lightning-slider
+        label="PROBABILIDADE %"
+        step="10"
+        value={myValue}
+        onchange={handleChange}
+    > 
+    </lightning-slider>
+    <div class="slds-m-vertical_medium">
+        <p>
+            A Probabilidade de Fechamento é de:
+            <span class="slds-text-heading_small">{myValue}%</span>
+        </p>
+    </div>
+</template>
